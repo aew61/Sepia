@@ -58,6 +58,19 @@
 						<doclint>none</doclint>
 					</configuration>
 				</plugin>
+
+                <!--
+                    Specify where the jarfile will go: in build_dir/bin
+                 -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>2.3.1</version>
+                    <configuration>
+                        <outputDirectory>${project.build.directory}/bin</outputDirectory>
+                    </configuration>
+                </plugin>
+
 			</plugins>
 		</pluginManagement>
 
